@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Simple Contact Form</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="https://code.jquery.com/ui/1.13.1/themes/smoothness/jquery-ui.css">
+
+    
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+    
+
+</head>
+<script>
+    $(document).ready(function () {
+        $("#date").datepicker({dateFormat:'dd-mm-yy'});
+        /* $("#date").datepicker('show'); */
+    });
+</script>
+
+<body>
+    <div class="section-padding">
+        <div class="section-bg">
+
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-7">
+                    <div class="contact-form">
+                        <h2 class="absolute-text">Appintment</h2>
+                        <form action="index.html">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <input type="text" placeholder="First Name">                                   
+                                </div>
+                                <div class="col-md-6">
+                                    <input type="text" placeholder="Last Name">                                   
+                                </div>
+                            </div>
+                            
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <input type="tel" placeholder="Phone Number">                                   
+                                </div>
+                                <div class="col-md-6">
+                                     <!-- <input type="date" placeholder="Date">  -->
+                                    <input type="text" id="date" placeholder="Date">                                   
+                                </div>
+                            </div>
+                            <p><textarea name="message" id="message" cols="30" rows="10" placeholder="Write Something..."></textarea></p>
+                            <p><input type="submit" value="Make Appointment"></p>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-md-5">
+                    <div class="appointment-text">
+                        <h3>Lorem ipsum dolor sit amet consectetur.</h3>
+                        <ul>
+                            <li><i class="fa fa-shield" aria-hidden="true"></i>Lorem ipsum dolor sit amet.</li>
+                            <li><i class="fa fa-shield" aria-hidden="true"></i>Lorem ipsum dolor sit amet.</li>
+                            <li><i class="fa fa-shield" aria-hidden="true"></i>Lorem ipsum dolor sit amet.</li>
+                            <li><i class="fa fa-shield" aria-hidden="true"></i>Lorem ipsum dolor sit amet.</li>
+                        </ul>
+                        <a href="" class="boxed-btn">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+    
+
+</body>
+</html>
